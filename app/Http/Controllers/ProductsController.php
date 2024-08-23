@@ -122,7 +122,7 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function remove($id)
     {
         DB::table('products')->where('id', '=', $id)->delete();
     }
